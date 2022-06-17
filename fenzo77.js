@@ -1,5 +1,5 @@
 /*
- - Create By FardanBot
+ - Create ByDeffri Gans
  - Contact Me on https://wa.me/+6289509960601
  - Base Dika 
  - Jangan Di Ubh Author Dek awas aj
@@ -97,12 +97,12 @@ let limit = JSON.parse(fs.readFileSync('./database/limit.json'));
 let _sewa = require("./lib/sewa");
 const sewa = JSON.parse(fs.readFileSync('./database/sewa.json'));
 
-// UCAPAN WAKTU ( FardanBot)
+// UCAPAN WAKTU (Deffri Gans)
 const time = moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')
 const ucap = moment(Date.now()).tz('Asia/Jakarta').locale('id').format('a')
 const qris = 'https://telegra.ph/file/78eba1cd6381d6e515f75.jpg'
 const faxc = 'https://telegra.ph/file/78eba1cd6381d6e515f75.jpg'
-// TANGGAL ( FardanBot )
+// TANGGAL (Deffri Gans )
 var buln = ['/01/', '/02/', '/03/', '/04/', '/05/', '/06/', '/07/', '/08/', '/09/', '/10/', '/11/', '/12/'];
 var myHari = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
 var tgel = new Date();
@@ -691,7 +691,7 @@ addBalance(m.sender, hadippp, balance)
 kuis = true
 jawaban = tebaklagu[m.sender.split('@')[0]]
 if (budy.toLowerCase() == jawaban) {
-await mans.sendButtonText(m.chat, [{ buttonId: 'tebak lagu', buttonText: { displayText: 'Tebak Lagu' }, type: 1 }], `🎮 Tebak Lagu 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, "© FardanBot - X - FardanBot", m)
+await mans.sendButtonText(m.chat, [{ buttonId: 'tebak lagu', buttonText: { displayText: 'Tebak Lagu' }, type: 1 }], `🎮 Tebak Lagu 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, "© Deffri Gans", m)
 delete tebaklagu[m.sender.split('@')[0]]
 } else m.reply('*Jawaban Salah!*')
 }
@@ -702,7 +702,7 @@ addBalance(m.sender, hadippp, balance)
 kuis = true
 jawaban = tebakgambar[m.sender.split('@')[0]]
 if (budy.toLowerCase() == jawaban) {
-await mans.sendButtonText(m.chat, [{ buttonId: 'tebak gambar', buttonText: { displayText: 'Tebak Gambar' }, type: 1 }], `🎮 Tebak Gambar 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, "© FardanBot - X - FardanBot", m)
+await mans.sendButtonText(m.chat, [{ buttonId: 'tebak gambar', buttonText: { displayText: 'Tebak Gambar' }, type: 1 }], `🎮 Tebak Gambar 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, "© Deffri Gans", m)
 delete tebakgambar[m.sender.split('@')[0]]
 } else m.reply('*Jawaban Salah!*')
 }
@@ -713,7 +713,7 @@ addBalance(m.sender, hadippp, balance)
 kuis = true
 jawaban = tebakkata[m.sender.split('@')[0]]
 if (budy.toLowerCase() == jawaban) {
-await mans.sendButtonText(m.chat, [{ buttonId: 'tebak kata', buttonText: { displayText: 'Tebak Kata' }, type: 1 }], `🎮 Tebak Kata 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, "© FardanBot - X - FardanBot", m)
+await mans.sendButtonText(m.chat, [{ buttonId: 'tebak kata', buttonText: { displayText: 'Tebak Kata' }, type: 1 }], `🎮 Tebak Kata 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, "© Deffri Gans", m)
 delete tebakkata[m.sender.split('@')[0]]
 } else m.reply('*Jawaban Salah!*')
 }
@@ -725,7 +725,7 @@ kuis = true
 jawaban = caklontong[m.sender.split('@')[0]]
 deskripsi = caklontong_desk[m.sender.split('@')[0]]
 if (budy.toLowerCase() == jawaban) {
-await mans.sendButtonText(m.chat, [{ buttonId: 'tebak lontong', buttonText: { displayText: 'Tebak Lontong' }, type: 1 }], `🎮 Cak Lontong 🎮\n\nJawaban Benar 🎉\n*${deskripsi}*\n\nIngin bermain lagi? tekan button dibawah`, "© FardanBot - X - FardanBot", m)
+await mans.sendButtonText(m.chat, [{ buttonId: 'tebak lontong', buttonText: { displayText: 'Tebak Lontong' }, type: 1 }], `🎮 Cak Lontong 🎮\n\nJawaban Benar 🎉\n*${deskripsi}*\n\nIngin bermain lagi? tekan button dibawah`, "© Deffri Gans", m)
 delete caklontong[m.sender.split('@')[0]]
 delete caklontong_desk[m.sender.split('@')[0]]
 } else m.reply('*Jawaban Salah!*')
@@ -737,7 +737,7 @@ addBalance(m.sender, hadippp, balance)
 kuis = true
 jawaban = tebakkalimat[m.sender.split('@')[0]]
 if (budy.toLowerCase() == jawaban) {
-await mans.sendButtonText(m.chat, [{ buttonId: 'tebak kalimat', buttonText: { displayText: 'Tebak Kalimat' }, type: 1 }], `🎮 Tebak Kalimat 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, "© FardanBot - X - FardanBot", m)
+await mans.sendButtonText(m.chat, [{ buttonId: 'tebak kalimat', buttonText: { displayText: 'Tebak Kalimat' }, type: 1 }], `🎮 Tebak Kalimat 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, "© Deffri Gans", m)
 delete tebakkalimat[m.sender.split('@')[0]]
 } else m.reply('*Jawaban Salah!*')
 }
@@ -748,7 +748,7 @@ addBalance(m.sender, hadippp, balance)
 kuis = true
 jawaban = tebaklirik[m.sender.split('@')[0]]
 if (budy.toLowerCase() == jawaban) {
-await mans.sendButtonText(m.chat, [{ buttonId: 'tebak lirik', buttonText: { displayText: 'Tebak Lirik' }, type: 1 }], `🎮 Tebak Lirik 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, "© FardanBot - X - FardanBot", m)
+await mans.sendButtonText(m.chat, [{ buttonId: 'tebak lirik', buttonText: { displayText: 'Tebak Lirik' }, type: 1 }], `🎮 Tebak Lirik 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, "© Deffri Gans", m)
 delete tebaklirik[m.sender.split('@')[0]]
 } else m.reply('*Jawaban Salah!*')
 }
@@ -759,7 +759,7 @@ addBalance(m.sender, hadippp, balance)
 kuis = true
 jawaban = tebaktebakan[m.sender.split('@')[0]]
 if (budy.toLowerCase() == jawaban) {
-await mans.sendButtonText(m.chat, [{ buttonId: 'tebak tebakan', buttonText: { displayText: 'Tebak Tebakan' }, type: 1 }], `🎮 Tebak Tebakan 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, "© FardanBot - X - FardanBot", m)
+await mans.sendButtonText(m.chat, [{ buttonId: 'tebak tebakan', buttonText: { displayText: 'Tebak Tebakan' }, type: 1 }], `🎮 Tebak Tebakan 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, "© Deffri Gans", m)
 delete tebaktebakan[m.sender.split('@')[0]]
 } else m.reply('*Jawaban Salah!*')
 }
@@ -1200,7 +1200,7 @@ let butRun = [
             { quickReplyButton: { displayText: `Contact Owner`, id: 'owner'} },
             { quickReplyButton: { displayText: `Profile`, id: 'profile'} }
         	]
-        	mans.sendMessage(m.chat, { caption: listmn, document: { url: 'https://fatiharridho.my.id/database/islam/juz-amma-arab-latin-indonesia.xlsx' }, mimetype: 'application/vnd.openxmlformats-officedocument.presentationml.presentation', fileName: '© FardanBot By Fardan Dev', templateButtons: butRun, footer: `🌏 Dont Spam & Telpon Bot`, mentionedJid: [m.sender] })
+        	mans.sendMessage(m.chat, { caption: listmn, document: { url: 'https://fatiharridho.my.id/database/islam/juz-amma-arab-latin-indonesia.xlsx' }, mimetype: 'application/vnd.openxmlformats-officedocument.presentationml.presentation', fileName: '©Deffri Gans', templateButtons: butRun, footer: `🌏 Dont Spam & Telpon Bot`, mentionedJid: [m.sender] })
         	break
 case 'donasi': case 'donate':{
 mans.sendMessage(from, {image:{url:qris}, caption:`${require('./help/help.js').donate(prefix, l, pushname)}`}, {quoted:m})
@@ -1244,7 +1244,7 @@ templateMessage: {
 hydratedTemplate: {
 imageMessage: message.imageMessage,
 hydratedContentText: listmn,
-hydratedFooterText: "© FardanBot - X - FardanBot",
+hydratedFooterText: "© Deffri Gans",
 hydratedButtons: [{
 urlButton: {
 displayText: 'Group Whatsapp',
@@ -2439,7 +2439,7 @@ tebaklagu[m.sender.split('@')[0]] = result.jawaban.toLowerCase()
 await sleep(60000)
 if (tebaklagu.hasOwnProperty(m.sender.split('@')[0])) {
 console.log("Jawaban: " + result.jawaban)
-mans.sendButtonText(m.chat, [{ buttonId: 'tebak lagu', buttonText: { displayText: 'Tebak Lagu' }, type: 1 }], `Waktu Habis\nJawaban:  ${tebaklagu[m.sender.split('@')[0]]}\n\nIngin bermain? tekan button dibawah`, "© FardanBot - X - FardanBot", m)
+mans.sendButtonText(m.chat, [{ buttonId: 'tebak lagu', buttonText: { displayText: 'Tebak Lagu' }, type: 1 }], `Waktu Habis\nJawaban:  ${tebaklagu[m.sender.split('@')[0]]}\n\nIngin bermain? tekan button dibawah`, "© Deffri Gans", m)
 delete tebaklagu[m.sender.split('@')[0]]
 }
 } else if (args[0] === 'gambar') {
@@ -2452,7 +2452,7 @@ tebakgambar[m.sender.split('@')[0]] = result.jawaban.toLowerCase()
 await sleep(60000)
 if (tebakgambar.hasOwnProperty(m.sender.split('@')[0])) {
 console.log("Jawaban: " + result.jawaban)
-mans.sendButtonText(m.chat, [{ buttonId: 'tebak gambar', buttonText: { displayText: 'Tebak Gambar' }, type: 1 }], `Waktu Habis\nJawaban:  ${tebakgambar[m.sender.split('@')[0]]}\n\nIngin bermain? tekan button dibawah`,"© FardanBot - X - FardanBot", m)
+mans.sendButtonText(m.chat, [{ buttonId: 'tebak gambar', buttonText: { displayText: 'Tebak Gambar' }, type: 1 }], `Waktu Habis\nJawaban:  ${tebakgambar[m.sender.split('@')[0]]}\n\nIngin bermain? tekan button dibawah`,"© Deffri Gans", m)
 delete tebakgambar[m.sender.split('@')[0]]
 }
 } else if (args[0] === 'kata') {
@@ -2465,7 +2465,7 @@ tebakkata[m.sender.split('@')[0]] = result.jawaban.toLowerCase()
 await sleep(60000)
 if (tebakkata.hasOwnProperty(m.sender.split('@')[0])) {
 console.log("Jawaban: " + result.jawaban)
-mans.sendButtonText(m.chat, [{ buttonId: 'tebak kata', buttonText: { displayText: 'Tebak Kata' }, type: 1 }], `Waktu Habis\nJawaban:  ${tebakkata[m.sender.split('@')[0]]}\n\nIngin bermain? tekan button dibawah`, "© FardanBot - X - FardanBot", m)
+mans.sendButtonText(m.chat, [{ buttonId: 'tebak kata', buttonText: { displayText: 'Tebak Kata' }, type: 1 }], `Waktu Habis\nJawaban:  ${tebakkata[m.sender.split('@')[0]]}\n\nIngin bermain? tekan button dibawah`, "© Deffri Gans", m)
 delete tebakkata[m.sender.split('@')[0]]
 }
 } else if (args[0] === 'kalimat') {
@@ -2478,7 +2478,7 @@ tebakkalimat[m.sender.split('@')[0]] = result.jawaban.toLowerCase()
 await sleep(60000)
 if (tebakkalimat.hasOwnProperty(m.sender.split('@')[0])) {
 console.log("Jawaban: " + result.jawaban)
-mans.sendButtonText(m.chat, [{ buttonId: 'tebak kalimat', buttonText: { displayText: 'Tebak Kalimat' }, type: 1 }], `Waktu Habis\nJawaban:  ${tebakkalimat[m.sender.split('@')[0]]}\n\nIngin bermain? tekan button dibawah`, "© FardanBot - X - FardanBot", m)
+mans.sendButtonText(m.chat, [{ buttonId: 'tebak kalimat', buttonText: { displayText: 'Tebak Kalimat' }, type: 1 }], `Waktu Habis\nJawaban:  ${tebakkalimat[m.sender.split('@')[0]]}\n\nIngin bermain? tekan button dibawah`, "© Deffri Gans", m)
 delete tebakkalimat[m.sender.split('@')[0]]
 }
 } else if (args[0] === 'lirik') {
@@ -2491,7 +2491,7 @@ tebaklirik[m.sender.split('@')[0]] = result.jawaban.toLowerCase()
 await sleep(60000)
 if (tebaklirik.hasOwnProperty(m.sender.split('@')[0])) {
 console.log("Jawaban: " + result.jawaban)
-mans.sendButtonText(m.chat, [{ buttonId: 'tebak lirik', buttonText: { displayText: 'Tebak Lirik' }, type: 1 }], `Waktu Habis\nJawaban:  ${tebaklirik[m.sender.split('@')[0]]}\n\nIngin bermain? tekan button dibawah`, "© FardanBot - X - FardanBot", m)
+mans.sendButtonText(m.chat, [{ buttonId: 'tebak lirik', buttonText: { displayText: 'Tebak Lirik' }, type: 1 }], `Waktu Habis\nJawaban:  ${tebaklirik[m.sender.split('@')[0]]}\n\nIngin bermain? tekan button dibawah`, "© Deffri Gans", m)
 delete tebaklirik[m.sender.split('@')[0]]
 }
 } else if (args[0] === 'lontong') {
@@ -2505,7 +2505,7 @@ caklontong_desk[m.sender.split('@')[0]] = result.deskripsi
 await sleep(60000)
 if (caklontong.hasOwnProperty(m.sender.split('@')[0])) {
 console.log("Jawaban: " + result.jawaban)
-mans.sendButtonText(m.chat, [{ buttonId: 'tebak lontong', buttonText: { displayText: 'Tebak Lontong' }, type: 1 }], `Waktu Habis\nJawaban:  ${caklontong[m.sender.split('@')[0]]}\nDeskripsi : ${caklontong_desk[m.sender.split('@')[0]]}\n\nIngin bermain? tekan button dibawah`, "© FardanBot - X - FardanBot", m)
+mans.sendButtonText(m.chat, [{ buttonId: 'tebak lontong', buttonText: { displayText: 'Tebak Lontong' }, type: 1 }], `Waktu Habis\nJawaban:  ${caklontong[m.sender.split('@')[0]]}\nDeskripsi : ${caklontong_desk[m.sender.split('@')[0]]}\n\nIngin bermain? tekan button dibawah`, "© Deffri Gans", m)
 delete caklontong[m.sender.split('@')[0]]
 delete caklontong_desk[m.sender.split('@')[0]]
 }
@@ -2649,7 +2649,7 @@ let buttonMessageVote = {
 image: log0,
 jpegThumbnail: log0,
 caption: teks_vote,
-footer: "© FardanBot - X - FardanBot",
+footer: "© Deffri Gans",
 buttons: buttonsVote,
 headerType: 1
 }
@@ -2693,7 +2693,7 @@ let buttonMessageUpvote = {
 image: log0,
 jpegThumbnail: log0,
 caption: teks_vote,
-footer: "© FardanBot - X - FardanBot",
+footer: "© Deffri Gans",
 buttons: buttonsUpvote,
 headerType: 1,
 mentions: menvote
@@ -2738,7 +2738,7 @@ let buttonMessageDevote = {
 image: log0,
 jpegThumbnail: log0,
 caption: teks_vote,
-footer: "© FardanBot - X - FardanBot",
+footer: "© Deffri Gans",
 buttons: buttonsDevote,
 headerType: 1,
 mentions: menvote
@@ -3210,7 +3210,7 @@ let buttonMessage = {
 image: log0,
 jpegThumbnail: log0,
 caption: teks,
-footer: "© FardanBot",
+footer: "©Deffri Gans",
 buttons: buttons,
 headerType: 4
 }
@@ -3234,7 +3234,7 @@ let buttonMessage = {
 image: {url:res[0].icon},
 jpegThumbnail: log0,
 caption: teks,
-footer: "© FardanBot",
+footer: "©Deffri Gans",
 buttons: buttons,
 headerType: 4
 }
@@ -3260,7 +3260,7 @@ let buttonMessage = {
 image: log0,
 jpegThumbnail: log0,
 caption: teks,
-footer: "© FardanBot",
+footer: "©Deffri Gans",
 buttons: buttons,
 headerType: 4
 }
@@ -3283,7 +3283,7 @@ let buttonMessage = {
 image: log0,
 jpegThumbnail: log0,
 caption: teks,
-footer: "© FardanBot ",
+footer: "©Deffri Gans ",
 buttons: buttons,
 headerType: 4
 }
@@ -3502,8 +3502,8 @@ let buttons = [
 let buttonMessage = {
 image: log0,
 jpegThumbnail: log0,
-caption: `*「 FardanBot 」*\n\nChange Info, Select Open Or Close`,
-footer: "© FardanBot",
+caption: `*「Deffri Gans 」*\n\nChange Info, Select Open Or Close`,
+footer: "©Deffri Gans",
 buttons: buttons,
 headerType: 4
 }
@@ -3528,8 +3528,8 @@ let buttons = [
 let buttonMessage = {
 image: log0,
 jpegThumbnail: log0,
-caption: `*「 FardanBot 」*\n\nChange Group Setting, Select Open Or Close`,
-footer: "© FardanBot",
+caption: `*「Deffri Gans 」*\n\nChange Group Setting, Select Open Or Close`,
+footer: "©Deffri Gans",
 buttons: buttons,
 headerType: 4
 }
@@ -4099,12 +4099,12 @@ caption: `*| GOOGLE IMAGE |*
 
 🤠 Query : ${text}
 🔗 Media Url : ${images}`,
-footer: "© FardanBot",
+footer: "©Deffri Gans",
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
 title:"NOMOR BOT WHATSAPP, MULTI DEVICE TERBARU FITUR BERJIBUN - ZackMans",
-body:"© FardanBot - X - FardanBot",
+body:"© Deffri Gans",
 thumbnail: log0,
 mediaType:2,
 mediaUrl: "https://youtube.com/watch?v=w6w0cy_1HY4",
@@ -4156,7 +4156,7 @@ let buttonMessage = {
 image:log0,
 jpegThumbnail:log0,
 caption: textbv,
-footer: "© FardanBot",
+footer: "©Deffri Gans",
 buttons: buttons,
 headerType: 4
 }
@@ -4192,7 +4192,7 @@ let buttonMessage = {
 image:log0,
 jpegThumbnail:log0,
 caption: textbv,
-footer: "© FardanBot",
+footer: "©Deffri Gans",
 buttons: buttons,
 headerType: 4
 }
@@ -4219,7 +4219,7 @@ if (!args[0]) return m.reply("Linknya mana kak?")
 try {
 mans.sendMessage(from, {video:{url:args[0]}, caption:"Succes", contextInfo:{externalAdReply:{
 title:"NOMOR BOT WHATSAPP, MULTI DEVICE TERBARU FITUR BERJIBUN - ZackMans",
-body:"© FardanBot - X - FardanBot",
+body:"© Deffri Gans",
 thumbnail: log0,
 mediaType:2,
 mediaUrl: "https://youtube.com/watch?v=w6w0cy_1HY4",
@@ -4236,7 +4236,7 @@ if (!args[0]) return m.reply("Linknya mana kak?")
 try {
 mans.sendMessage(from, {image:{url:args[0]}, caption:"Succes", contextInfo:{externalAdReply:{
 title:"NOMOR BOT WHATSAPP, MULTI DEVICE TERBARU FITUR BERJIBUN - ZackMans",
-body:"© FardanBot - X - FardanBot",
+body:"© Deffri Gans",
 thumbnail: log0,
 mediaType:2,
 mediaUrl: "https://youtube.com/watch?v=w6w0cy_1HY4",
@@ -4267,7 +4267,7 @@ let buttons = [
 let buttonMessage = {
 video: {url:lotwit.medias[1].url},
 caption: teks,
-footer: "© FardanBot",
+footer: "©Deffri Gans",
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -4293,7 +4293,7 @@ let buttons = [
 let buttonMessage = {
 video: {url:args[0]},
 caption: "Done!",
-footer: "© FardanBot",
+footer: "©Deffri Gans",
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -4326,7 +4326,7 @@ let buttons = [
 let buttonMessage = {
 video: {url:resd.medias[0].url},
 caption: teks,
-footer: "© FardanBot",
+footer: "©Deffri Gans",
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -4353,7 +4353,7 @@ let buttons = [
 let buttonMessage = {
 video: {url:args[0]},
 caption: "Done!",
-footer: "© FardanBot",
+footer: "©Deffri Gans",
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -4560,12 +4560,12 @@ let buttons = [
 let buttonMessage = {
 image: {url:res.thumb},
 caption: textyt,
-footer: "© FardanBot",
+footer: "©Deffri Gans",
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
 title: res.title,
-body: "© FardanBot - X - FardanBot",
+body: "© Deffri Gans",
 thumbnail: {url:res.thumb},
 mediaType:2,
 mediaUrl: args[0],
@@ -4830,7 +4830,7 @@ case 'pinterest': {
 case 'swm': case 'stickerwm': {
  fakey(mess.wait)
 if (isBan) return m.reply(mess.ban)
-if (!args.join(" ")) return m.reply(`Example :\nswm FardanBot | Pack`)
+if (!args.join(" ")) return m.reply(`Example :\nswmDeffri Gans | Pack`)
 const swn = args.join(" ")
 const pcknm = swn.split("|")[0];
 const atnm = swn.split("|")[1];
@@ -5327,10 +5327,10 @@ if(err) return mans.sendMessage(from, {image:log0, caption:String(err)}, {quoted
 if (stdout) return m.reply(stdout)
 })
 }
-// Anti Tag ( FardanBot )
+// Anti Tag (Deffri Gans )
 const listTag = ["6289509960601@s.whatsapp.net"]
 const partiNum = (m.mtype === 'extendedTextMessage') ? m.message.extendedTextMessage.contextInfo.participant : ''
-// Antitag Via Reply ( FardanBot )
+// Antitag Via Reply (Deffri Gans )
 if (listTag.includes(partiNum)) {
 if (antitags === false) return
 if (!m.isGroup) return
@@ -5339,7 +5339,7 @@ sendNye = 'https://uploader.caliph.my.id/file/Hxf936tvPc.webp'
 mans.sendReadReceipt(m.chat, m.sender, [m.key.id])
 mans.sendImageAsSticker(m.chat, `https://uploader.caliph.my.id/file/Hxf936tvPc.webp`, m, {packname: packname, author: author})
 }
-// Antitag Via Tag ( FardanBot )
+// Antitag Via Tag (Deffri Gans )
 if (budy.includes("@6289509960601")) {
 if (antitags === false) return
 if (!m.isGroup) return
