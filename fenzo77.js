@@ -148,7 +148,6 @@ const isUser = pendaftar.includes(m.sender)
 const isBan = banUser.includes(m.sender)
 const isRakyat = isCreator || global.rkyt.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender) || false
 const AntiLink = m.isGroup ? ntilink.includes(from) : false
-const welcm = m.isGroup ? wlcm.includes(from) : false
 const GcRvk = m.isGroup ? gcrevoke.includes(from) : false
 const isLeveling = m.isGroup ? _leveling.includes(from) : false
 const isAutoStick = _autostick.includes(from)
@@ -402,7 +401,7 @@ var levelRole = getLevelingLevel(m.sender)
             roles = 'Exter'
         }
         //function levelingnya
-                        if (m.isGroup && isLeveling && isUser && mans.public) {
+                        if (m.isGroup && isLeveling && isUser) {
                                 const currentLevel = getLevelingLevel(m.sender)
                                 const checkId = getLevelingId(m.sender)
                                 try {
@@ -660,11 +659,6 @@ await mans.groupParticipantsUpdate(m.chat, [kice], 'remove').then((res) => m.rep
 mans.sendMessage(from, {text:`\`\`\`「 Detect Link 」\`\`\`\n\n@${kice.split("@")[0]} Telah dikick karena send link di group ini`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 } else {
 }
-}
-
-// Public & Self
-if (!mans.public) {
-if (!m.key.fromMe) return
 }
 
 // write database every 1 minute
@@ -1002,7 +996,7 @@ message: {
 "mimetype": "image/jpeg",
 "jpegThumbnail": log0 //Gambarnye
 },
-"title": "FardanBot", //Kasih namalu 
+"title": "Deffri Gans", //Kasih namalu 
 "description": "SELF BOT", 
 "currencyCode": "USD",
 "priceAmount1000": "2000",
@@ -1166,7 +1160,7 @@ ${ultah}
 ❏ *PROFILE BOT*
 ⫹⫺ Owner : ${owner.length}
 ⫹⫺ User Bot : ${jumlahUser}
-⫹⫺ Author : Fardan Dev
+⫹⫺ Author : Fardan
 ⫹⫺ Library : @adiwajshing/baileys-md
 ⫹⫺ User Cmd :${m.sender.split("@")[0]}
 
@@ -1203,7 +1197,7 @@ let butRun = [
         	mans.sendMessage(m.chat, { caption: listmn, document: { url: 'https://fatiharridho.my.id/database/islam/juz-amma-arab-latin-indonesia.xlsx' }, mimetype: 'application/vnd.openxmlformats-officedocument.presentationml.presentation', fileName: '©Deffri Gans', templateButtons: butRun, footer: `🌏 Dont Spam & Telpon Bot`, mentionedJid: [m.sender] })
         	break
 case 'donasi': case 'donate':{
-mans.sendMessage(from, {image:{url:qris}, caption:`${require('./help/help.js').donate(prefix, l, pushname)}`}, {quoted:m})
+mans.sendMessage(from, {image:{url:qris}, caption:`${require('./help/help.js').donate(prefix, l, pushname)}`}, {quoted:fgclink})
 }
 break
 case 'me': case 'inventori': case 'profile':{
@@ -1232,7 +1226,7 @@ case 'me': case 'inventori': case 'profile':{
             { urlButton: { displayText: `☎️Contact Me`, url: `+62 895-0996-0601` } },
             { quickReplyButton: { displayText: `🏧 leaderboard`, id: 'leaderboard'} }
         	]
-        	mans.sendMessage(m.chat, { caption: teksehmazeh, document: { url: 'https://fatiharridho.my.id/database/islam/juz-amma-arab-latin-indonesia.pptx' }, mimetype: 'application/vnd.openxmlformats-officedocument.presentationml.presentation', fileName: '© Fardan Store', templateButtons: butRun, footer: `ingin Berpetualang Lagi`, mentions: [m.sender] })
+        	mans.sendMessage(m.chat, { caption: teksehmazeh, document: { url: 'https://fatiharridho.my.id/database/islam/juz-amma-arab-latin-indonesia.pptx' }, mimetype: 'application/vnd.openxmlformats-officedocument.presentationml.presentation', fileName: '© Deffri Gans', templateButtons: butRun, footer: `ingin Berpetualang Lagi`, mentions: [m.sender] })
         	}
         	break
 
@@ -1728,7 +1722,7 @@ let topp = `🧾 *FPRMULIR REKBER*
 3. EX/INC :
 4. REFF/NOREFF :
 
-*BIAYA REKBER Fardan STORE*
+*BIAYA REKBER Deffri Gans*
 0 - 20    RP 3.000
 20 - 100 RP 5.000
 100 - 300 RP 1.0000
@@ -1741,7 +1735,7 @@ mans.sendMessage(from, {image:{url:qris}, caption: topp}, {quoted:ftoko})
 break
 case 'list-joki':{
 let top = `
-𝙅𝘼𝙎𝘼 𝙅𝙊𝙆𝙄 *Fardan STORE*
+𝙅𝘼𝙎𝘼 𝙅𝙊𝙆𝙄 *Deffri Gans*
 
 ⬇️ 𝗥𝗔𝗡𝗞 𝗣𝗢𝗜𝗡 ⬇️
 🎮 𝗘𝗣𝗜𝗖 = 𝟱.𝟬𝟬𝟬
@@ -2140,7 +2134,7 @@ case 'wallpaper': {
                 let buttonMessage = {
                     image: { url: result.image[0] },
                     caption: `Title : ${result.title}\nCategory : ${result.type}\nDetail : ${result.source}\nMedia Url : ${result.image[2] || result.image[1] || result.image[0]}`,
-                    footer: `© Created Fardan Store`,
+                    footer: `© Created Deffri Gans`,
                     buttons: buttons,
                     headerType: 4
                 }
@@ -2272,7 +2266,7 @@ case 'coffe': case 'kopi': {
                 let buttonMessage = {
                     image: { url: 'https://coffee.alexflipnote.dev/random' },
                     caption: `☕ Random Coffe`,
-                    footer: `Created By © Fardan Store`,
+                    footer: `Created By © Deffri Gans`,
                     buttons: buttons,
                     headerType: 4
                 }
@@ -2367,6 +2361,26 @@ m.reply(`*Hasil:* ${pytha}\n*Rumus:* ${rumuspytha}`)
 } catch (err) {
 m.reply('Format pesannya salah tuh') 
 }
+break
+case 'waifu':
+m.reply(mess.wait)
+waifu = await getBuffer(`https://tyz-api.herokuapp.com/randomimg/waifu`)
+mans.sendMessage(m.chat, waifu, image, { quoted: m})
+break
+case 'husbu':
+m.reply(mess.wait)
+husbu = await getBuffer(`https://tyz-api.herokuapp.com/randomimg/husbu`)
+mans.sendMessage(m.chat, husbu, image, { quoted: m})
+break
+case 'loli':
+m.reply(mess.wait)
+loli = await getBuffer(`https://tyz-api.herokuapp.com/randomimg/loli`)
+mans.sendMessage(m.chat, loli, image, { quoted: m})
+break
+case 'milf':
+m.reply(mess.wait)
+milf = await getBuffer(`https://tyz-api.herokuapp.com/randomimg/milf`)
+mans.sendMessage(m.chat, milf, image, { quoted: m})
 break
 case 'perkalian':
 
@@ -2926,25 +2940,6 @@ buffer = await getBuffer(anu[0].avatar_url)
 	teks = `*Username:* ${anu.login}\n*Link:* ${anu.html_url}\n                            \n`
 mans.sendMessage(from, {image:{url:buffer}, caption:teks}, {quoted:m})
 			break
-case 'welcome': {
-if (isBan) return m.reply(mess.ban)
-if (!m.isGroup) return m.reply(mess.group)
-if (!isAdmins && !isCreator) return m.reply(mess.admin)
-if (args.length < 1) return m.reply('ketik on untuk mengaktifkan\nketik off untuk menonaktifkan')
-if (args[0] === "on") {
-if (welcm) return m.reply('Sudah Aktif')
-wlcm.push(from)
-m.reply('Succes menyalakan welcome di group ini')
-} else if (args[0] === "off") {
-if (!welcm) return m.reply('Sudah Mati')
-let off = wlcm.indexOf(from)
-wlcm.splice(off, 1)
-m.reply('Succes mematikan welcome di group ini')
-} else {
-m.reply('on untuk mengaktifkan, off untuk menonaktifkan')
-}
-}
-break
 case 'autorevoke': {
 if (isBan) return m.reply(mess.ban)
 if (!m.isGroup) return m.reply(mess.group)
@@ -3821,7 +3816,7 @@ if (isBan) return m.reply(mess.ban)
 if (!isCreator) return m.reply(mess.owner)
 mans.public = true
 m.reply('Sukse Change To Public Usage')
-mans.setStatus(`Mode : Public Created By Fardan Store`)
+mans.setStatus(`Mode : Public Created By Deffri Gans`)
 }
 break
 case 'setstatut':
@@ -3832,9 +3827,9 @@ break
 case 'self': {
 if (isBan) return m.reply(mess.ban)
 if (!isCreator) return m.reply(mess.owner)
-mans.public = false
+mans.public = true
 m.reply('Sukses Change To Self Usage')
-mans.setStatus(`Mode : Self Created By Fardan Store`)
+mans.setStatus(`Mode : Self Created By Deffri Gans`)
 }
 break
 case 'speed':case 'ping': case 'botstatus': case 'statusbot': {
@@ -4409,7 +4404,7 @@ case 'iqra': {
 		oh = `Example : ${prefix + command} 3\n\nIQRA Yang tersedia : 1,2,3,4,5,6`
 		if (!text) return oh
 		yy = await getBuffer(`https://islamic-api-indonesia.herokuapp.com/api/data/pdf/iqra${text}`)
-		mans.sendMessage(m.chat, {document: yy, mimetype: 'application/pdf', fileName: `iqra${text}.pdf By Fardan Store`}, {quoted:m}).catch ((err) => m.reply(oh))
+		mans.sendMessage(m.chat, {document: yy, mimetype: 'application/pdf', fileName: `iqra${text}.pdf By Deffri Gans`}, {quoted:m}).catch ((err) => m.reply(oh))
 		}
 		break
 		case 'juzamma': {
@@ -4533,7 +4528,7 @@ Author : ${anu.author.name}
 Channel : ${anu.author.url}
 Description : ${anu.description}
 Url : ${anu.url}`,
-                    footer: `Created By © Fardan Store\nPilih Video Apa Audio?`,
+                    footer: `Created By © Deffri Gans\nPilih Video Apa Audio?`,
                     buttons: buttons,
                     headerType: 4
                 }
@@ -4598,14 +4593,14 @@ case 'asupan-ukhty':
  fakey(mess.wait)
 teks = `nih Kak >\\<`
 buffer = `https://api.dapuhy.xyz/api/asupan/asupanukhty?apikey=0gly81wDky`
-mans.sendMessage(from, {video:{url:buffer}, mimetype:"video/mp4", caption:"By Fardan Store"}, {quoted:m})
+mans.sendMessage(from, {video:{url:buffer}, mimetype:"video/mp4", caption:"By Deffri Gans"}, {quoted:m})
 break
 case 'asupan-santuy':
 case 'asupansantuy':
  fakey(mess.wait)
 teks = `nih Kak >\\<`
 buffer = `https://api.zacros.my.id/asupan/santuy`
-mans.sendMessage(from, {video:{url:buffer}, mimetype:"video/mp4", caption:"By Fardan Store"}, {quoted:m})
+mans.sendMessage(from, {video:{url:buffer}, mimetype:"video/mp4", caption:"By Deffri Gans"}, {quoted:m})
 break
 case 'hijaber':
  fakey(mess.wait)
@@ -4738,26 +4733,6 @@ break
 
 
 //NEEWW
-case 'waifu':
-teks = `nih Kak >\\<`
-buffer = `https://api.zacros.my.id/randomimg/waifu`
-mans.sendMessage(from, {image:{url:buffer}, caption:"Done!"}, {quoted:m})
-break
-case 'husbu':
-teks = `nih Kak >\\<`
-buffer = `https://api.zacros.my.id/randomimg/husbu`
-mans.sendMessage(from, {image:{url:buffer}, caption:"Done!"}, {quoted:m})
-break
-case 'loli':
-teks = `nih Kak >\\<`
-buffer = `https://api.zacros.my.id/randomimg/loli`
-mans.sendMessage(from, {image:{url:buffer}, caption:"Done!"}, {quoted:m})
-break
-case 'cosplay':
-teks = `nih Kak >\\<`
-buffer = `https://api.zacros.my.id/randomimg/cosplay`
-mans.sendMessage(from, {image:{url:buffer}, caption:"Done!"}, {quoted:m})
-break
 /*case '':
 teks = `nih Kak >\\<`
 buffer = ``
@@ -4809,7 +4784,7 @@ case 'ytmp3':
       axios.get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
 .then((a) => {
    
-      mans.sendMessage(from, { video: { url: dl_link }, caption: "By Fardan Store" }, { quoted: m })
+      mans.sendMessage(from, { video: { url: dl_link }, caption: "By Deffri Gans" }, { quoted: m })
       })
      
 })
@@ -4949,7 +4924,7 @@ case 'detiknews': case 'detik':{
       from, 
       {
        text: "Cari berita di detik.com",
-       footer: "Fardan Store",
+       footer: "Deffri Gans",
        title: "[ Data Data Yang Kami Dapatkan Dari detik.com 🔎 ]",
        buttonText: "Click and see search results➡️",
        sections
