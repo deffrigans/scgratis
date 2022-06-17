@@ -87,8 +87,6 @@ mans.ev.on('groups.update', async pea => {
     })
 
 mans.ev.on('group-participants.update', async (anu) => {
-        console.log(anu)
-        if (!wlcm.includes(anu.id)) return
         try {
             let metadata = await mans.groupMetadata(anu.id)
             let participants = anu.participants
@@ -109,9 +107,10 @@ mans.ev.on('group-participants.update', async (anu) => {
 
                 if (anu.action == 'add') {
                 var but = [{buttonId: `/`, buttonText: { displayText: "Welcome 🥳" }, type: 1 }]
-                    mans.sendMessage(anu.id, { image: { url: ppuser }, buttons: but, contextInfo: { mentionedJid: [num] }, caption: `Welcome To ${metadata.subject} @${num.split("@")[0]}` })
+                    mans.sendMessage(anu.id, { caption: `Hallo @${num.split("@")[0]} Selamat Datang Di Grup *${metadata.subject}*\nSilahkan Untuk Memperkenalkan diri anda`, image: {url: ppuser}, buttons: but, footer: `©Message : ${metadata.subject}`, mentions: [num]})
                 } else if (anu.action == 'remove') {
-                    mans.sendMessage(anu.id, { image: { url: ppuser }, contextInfo: { mentionedJid: [num] }, caption: `@${num.split("@")[0]} Leaving To ${metadata.subject}` })
+                 var but = [{buttonId: `/`, buttonText: { displayText: "Selamat Tinggal Beban 👋" }, type: 1 }]
+                    mans.sendMessage(anu.id, { image: { url: ppuser }, buttons: but, contextInfo: { mentionedJid: [num] }, caption: `@${num.split("@")[0]} Leaving To ${metadata.subject}` })
                 }
             }
         } catch (err) {
